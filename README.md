@@ -31,16 +31,18 @@
 -	Connect to the Client with Remote Desktop using one of the newly created user accounts
 
 
-<h2>Synopsis</h2>
+<h2>Summary</h2>
 
-<p>
-<img src="https://i.imgur.com/ti0b95l.png" height="70%" width="70%"/>
-</p>
 <p>
 I created two virtual machines in Azure, one with Windows Server 2022 and the other with windows 10. The Windows 2022 virtual machine would be the domain controller and the Windows 10 virtual machine would be the client machine. I had to switch the Domain controllers NIC private IP address from Dynamic to Static. The reason I did this was because when I configured the cleint's DNS settings, the Domain controllers IP address would still be the same. I also had to view the topology in Azure Network Watcher to make sure the both devices were on the network and subnet.
 </p>
+<img src="https://i.imgur.com/ti0b95l.png" height="70%" width="70%"/>
 <br />
 
+<h3>Connecting with RDP and firewall modification</h3>
+<p>
+I connected both devices using Remote Desktop, I inititated a contiouns ping from the Client to the Domain controller to ensure connectivity. The requests were timing out, so I changed the setting in Windows Defender Firewall in the DC, and enabled Networking Diagnostics (ICMPv4 protocol). This allowed the Domain Controller to reply to the requests.
+</p>
 <p>
 <img src="https://i.imgur.com/YvrBTgj.png" height="70%" width="70%"/>
 </p>
@@ -50,19 +52,17 @@ I created two virtual machines in Azure, one with Windows Server 2022 and the ot
 <p>
 <img src="https://i.imgur.com/LccuYWf.png" height="70%" width="70%"/>
 </p>
-<p>
-I connected both devices using Remote Desktop, I inititated a contiouns ping from the Client to the Domain controller to ensure connectivity. The requests were timing out, so I changed the setting in Windows Defender Firewall in the DC, and enabled Networking Diagnostics (ICMPv4 protocol). This allowed the Domain Controller to reply to the requests.
-</p>
 <br />
 
+<h3>Installing Active Directory</h3>
+<p>
+I installed Active Directory Domain Services (AD DS) from the Server Manager Dashboard. Once AD DS was installed, I promoted the machine to a Domain Controller so that it could manage devices and accounts on the domain.
+</p>
 <p>
 <img src="https://i.imgur.com/AayPHkb.png" height="70%" width="70%"/>
 </p>
 <p>
 <img src="https://i.imgur.com/XqzeZYs.png" height="70%" width="70%"/>
-</p>
-<p>
-I installed Active Directory Domain Services (AD DS) from the Server Manager Dashboard. Once AD DS was installed, I promoted the machine to a Domain Controller so that it could manage devices and accounts on the domain.
 </p>
 <br />
 
