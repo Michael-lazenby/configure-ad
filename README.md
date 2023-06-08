@@ -39,7 +39,7 @@ I created two virtual machines in Azure, one with Windows Server 2022 and the ot
 <img src="https://i.imgur.com/ti0b95l.png" height="70%" width="70%"/>
 <br />
 
-<h3>Connecting with RDP and firewall modification</h3>
+<h3>Connecting with RDP and firewall modifications</h3>
 <p>
 I connected both devices using Remote Desktop, I inititated a contiouns ping from the Client to the Domain controller to ensure connectivity. The requests were timing out, so I changed the setting in Windows Defender Firewall in the DC, and enabled Networking Diagnostics (ICMPv4 protocol). This allowed the Domain Controller to reply to the requests.
 </p>
