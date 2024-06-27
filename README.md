@@ -17,18 +17,10 @@
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Steps</h2>
+<h2>Key Objectives</h2>
 
-- Create 2 virtual machines, one with Windows 10 (Client VM) and the other with Windows Server 2022 (DC/Domain Controller VM)
--	Set the DC’s NIC private IP address from Dynamic to Static
--	Connect to both VMs using Remote Desktop
--	Initiate a perpetual ping from the Client to the DC; if there is no reply, enable Core Networking Diagnostics in the DC’s firewall
--	Install Active Directory Domain Services on the DC and promote it to a domain controller
--	Create an admin account and Organizational Units (OU) in Active Directory Users and Computers (ADUC), then log back in using the admin account
--	Set the Client’s DNS settings to the DC’s Private IP address, then join the Client to the DC
--	Enable Remote Desktop for domain users to access the Client
--	Create user accounts using a PowerShell script (run PowerShell ISE as administrator)
--	Connect to the Client with Remote Desktop using one of the newly created user accounts
+<h2>Active Directory Installation</h2>
+<p>Configure and install Active Directory services on the designated Domain Controller virtual machine.<p>
 
 
 <h2>Summary</h2>
