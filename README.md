@@ -39,23 +39,12 @@
 <h3> Install Active Directory in DC</h3>
 <p>
 In the Server Manager dashboard, click on "Add roles and features" and follow the setup instructions.
-<p>
 
-
-<h3>Installing Active Directory</h3>
-<p>
-I installed Active Directory Domain Services (AD DS) from the Server Manager Dashboard. Once AD DS was installed, I promoted the machine to a Domain Controller so that it could manage devices and accounts on the domain.
-</p>
 <p>
 <img src="https://i.imgur.com/AayPHkb.png" height="70%" width="70%"/>
 </p>
 <p>
-<img src="https://i.imgur.com/XqzeZYs.png" height="70%" width="70%"/>
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/jbCeryh.png" height="70%" width="70%"/>
 </p>
 <p>
 Now that Active Directory was all set up, I added two organizational units (OU) and a user. The OUs were _ADMINS and _EMPLOYEES, and the new user was “Jane Doe.” Jane was going to be an administrator, so I created her account inside the _ADMINS OU and added her as a member of Domain Admins. I logged out of the default account that I started with and logged back in as Jane.
