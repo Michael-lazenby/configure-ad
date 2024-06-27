@@ -34,21 +34,13 @@
 <h3>Remote Desktop Setup</h3>
 <p>Configure Remote Desktop access specifically tailored for non-administrative users, enhancing user accessibility while maintaining security protocols</p>
 
+<h2>Configuration</h2>
 
+<h3> Install Active Directory in DC</h3>
+<p>
+In the Server Manager dashboard, click on "Add roles and features" and follow the setup instructions.
+<p>
 
-<h3>Connecting with RDP and firewall modifications</h3>
-<p>
-I connected both devices using Remote Desktop, and then I initiated a continuous ping from the Client to the Domain controller to ensure connectivity. The requests were timing out, so I changed the setting in Windows Defender Firewall in the DC and enabled Networking Diagnostics (ICMPv4 protocol). This allowed the Domain Controller to reply to the requests.</p>
-<p>
-<img src="https://i.imgur.com/YvrBTgj.png" height="70%" width="70%"/>
-</p>
-<p>
-<img src="https://i.imgur.com/ym3Ld63.png" height="70%" width="70%"/>
-</p>
-<p>
-<img src="https://i.imgur.com/LccuYWf.png" height="70%" width="70%"/>
-</p>
-<br />
 
 <h3>Installing Active Directory</h3>
 <p>
