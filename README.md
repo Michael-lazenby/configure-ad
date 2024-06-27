@@ -12,26 +12,26 @@
 - Active Directory Domain Services
 - PowerShell
 
-<h2>Operating Systems Used </h2>
+<h3>Operating Systems Used </h3>
 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>Key Objectives</h2>
+<h3>Key Objectives</h3>
 
-<h2>Active Directory Installation</h2>
+<h3>Active Directory Installation</h3>
 <p>Configure and install Active Directory services on the designated Domain Controller virtual machine<p>
 
-<h2>Forest Creation</h2>
+<h3>Forest Creation</h3>
 <p>Establish a new Active Directory forest</p>
 
-<h2>Administrator Account Creation</h2>
+<h3>Administrator Account Creation</h3>
 <p>Create and administer user accounts with administrative privileges for effective management of the Active Directory environment</p>
 
-<h2>Domain Joining</h2>
+<h3>Domain Joining</h3>
 <p>Integrate the virtual machine into the existing domain to ensure seamless communication with the Active Directory infrastructure</p>
 
-<h2>Remote Desktop Setup</h2>
+<h3>Remote Desktop Setup</h3>
 <p>Configure Remote Desktop access specifically tailored for non-administrative users, enhancing user accessibility while maintaining security protocols</p>
 
 
