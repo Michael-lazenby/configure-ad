@@ -46,15 +46,11 @@ In the Server Manager dashboard, click on "Add roles and features" and follow th
 <p>
 
 </p>
-<p>
-Now that Active Directory was all set up, I added two organizational units (OU) and a user. The OUs were _ADMINS and _EMPLOYEES, and the new user was “Jane Doe.” Jane was going to be an administrator, so I created her account inside the _ADMINS OU and added her as a member of Domain Admins. I logged out of the default account that I started with and logged back in as Jane.
-</p>
+<h3>Select Active Directory Domain Services and finish the installation</h3>
 <br />
 
 
-<p>
-I went back to Azure and set the DC’s private IP address as the DNS server for the Client. After this, I was able to join the Client in my domain. This was confirmed by the “Welcome” box that popped up, confirming that the Client was now part of the domain.
-</p>
+
 <img src="https://i.imgur.com/afGXoqY.png" height="70%" width="70%"/>
 </p>
 <p>
