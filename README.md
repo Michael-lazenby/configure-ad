@@ -20,16 +20,21 @@
 <h2>Key Objectives</h2>
 
 <h2>Active Directory Installation</h2>
-<p>Configure and install Active Directory services on the designated Domain Controller virtual machine.<p>
+<p>Configure and install Active Directory services on the designated Domain Controller virtual machine<p>
+
+<h2>Forest Creation</h2>
+<p>Establish a new Active Directory forest</p>
+
+<h2>Administrator Account Creation</h2>
+<p>Create and administer user accounts with administrative privileges for effective management of the Active Directory environment</p>
+
+<h2>Domain Joining</h2>
+<p>Integrate the virtual machine into the existing domain to ensure seamless communication with the Active Directory infrastructure</p>
+
+<h2>Remote Desktop Setup</h2>
+<p>Configure Remote Desktop access specifically tailored for non-administrative users, enhancing user accessibility while maintaining security protocols</p>
 
 
-<h2>Summary</h2>
-
-<p>
-I created two virtual machines in Azure, one with Windows Server 2022 and the other with Windows 10. The Windows 2022 virtual machine would be the domain controller, and the Windows 10 virtual machine would be the client machine. I had to switch the Domain controller's NIC private IP address from Dynamic to Static. The reason I did this was that when I configured the client's DNS settings, the Domain controller's IP address would still be the same. I also viewed the topology in Azure Network Watcher to make sure both devices were on the network and subnet.
-</p>
-<img src="https://i.imgur.com/ti0b95l.png" height="70%" width="70%"/>
-<br />
 
 <h3>Connecting with RDP and firewall modifications</h3>
 <p>
