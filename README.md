@@ -51,8 +51,7 @@ In the Server Manager dashboard, click on "Add roles and features" and follow th
 
 
 
-<img src="https://i.imgur.com/afGXoqY.png" height="70%" width="70%"/>
-</p>
+
 <p>
 <img src="https://i.imgur.com/31ZSBHk.png" height="70%" width="70%"/>
 </p>
